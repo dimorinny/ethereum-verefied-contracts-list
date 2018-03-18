@@ -33,7 +33,7 @@ function verify () {
     echo "${#CONTRACTS[@]} contracts will be checked"
     echo ""
 
-    for contract in ${CONTRACTS}
+    for contract in ${CONTRACTS[@]}
     do
         echo "Starting verifying directory: ${contract}..."
         echo "Checking folder name (should has the same name as a contract address)..."
