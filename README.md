@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/dimorinny/ethereum-verefied-contracts-list.svg?branch=master)](https://travis-ci.org/dimorinny/ethereum-verefied-contracts-list)
+[![Build Status](https://travis-ci.org/dimorinny/ethereum-verified-contracts.svg?branch=master)](https://travis-ci.org/dimorinny/ethereum-verified-contracts)
