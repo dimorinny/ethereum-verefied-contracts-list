@@ -30,6 +30,9 @@ function verify () {
     CONTRACTS=$(getContracts)
     FAILED_CONTRACTS=()
 
+    echo "${#CONTRACTS[@]} contracts will be checked"
+    echo ""
+
     for contract in ${CONTRACTS}
     do
         echo "Starting verifying directory: ${contract}..."
