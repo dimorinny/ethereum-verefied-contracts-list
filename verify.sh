@@ -28,6 +28,7 @@ function verify () {
 
     if [ -n "$FAILED_CONTRACTS" ]; then
         echo "Validation failed for${FAILED_CONTRACTS}"
+        exit 1
     fi
 }
 
