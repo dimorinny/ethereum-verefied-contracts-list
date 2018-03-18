@@ -4,4 +4,4 @@ services:
   - docker
 
 script:
-- ./verify.sh
+  - ./verify.sh
