@@ -1,5 +1,5 @@
 {
-  "name": "ethereum-verefied-contracts-list-checker",
+  "name": "ethereum-verefied-contracts-checker",
   "version": "1.0.0",
   "description": "Check added contracts to git repository",
   "main": "index.js",
