@@ -27,7 +27,7 @@ function verifyDirectoryName () {
 }
 
 function verify () {
-    CONTRACTS=$(getContracts)
+    CONTRACTS=($(getContracts))
     FAILED_CONTRACTS=()
 
     echo "${#CONTRACTS[@]} contracts will be checked"
