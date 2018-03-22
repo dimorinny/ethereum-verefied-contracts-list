@@ -9,6 +9,7 @@
   "private": true,
   "dependencies": {
     "dockernode": "^0.1.0",
+    "js-yaml": "^3.11.0",
     "nodegit": "^0.21.1"
   }
 }
