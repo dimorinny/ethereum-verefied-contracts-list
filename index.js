@@ -1,9 +1,21 @@
 const {checkAddress} = require('./checker/checks/address')
+const {provideChangedContractsList} = require('./checker/contracts')
 const {ProblemsRegistry} = require('./checker/problems')
 
-const registry = new ProblemsRegistry()
+async function check (registry, contracts) {
+  for (const contract of contracts) {
+    console.log(`Starting analyzing contract: ${contract}...`)
 
-console.log('Check Address step starting...')
-checkAddress(registry, 'contracts/0x0b1225323ff8dafee69643068bedbb0e351b8271')
-  .then(() => console.log('Check Address step completed'))
+    console.log('Check Address step starting...')
+    await checkAddress(registry, contract)
+    console.log('Check Address step completed')
+  }
+}
+
+const registry = new ProblemsRegistry()
+const contracts = provideChangedContractsList('contracts')
+
+console.log(`Found ${contracts.length} changed (or added) contracts`)
+
+check(registry, contracts)
   .then(() => registry.exit())

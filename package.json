@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "dockernode": "^0.1.0",
+    "ethereum-contract-verifier": "dimorinny/ethereum-contract-verifier",
     "js-yaml": "^3.11.0",
     "nodegit": "^0.21.1"
   }
