@@ -7,6 +7,9 @@
   "author": "dimorinny",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "test": "./index.js"
+  },
   "dependencies": {
     "ethereum-contract-verifier": "dimorinny/ethereum-contract-verifier",
     "js-yaml": "^3.11.0",

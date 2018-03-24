@@ -10,7 +10,7 @@ class ProblemsRegistry {
   exit () {
     console.log()
 
-    if (this.problems) {
+    if (this.problems.length > 0) {
       console.log(`There were ${this.problems.length} problems`)
       this.problems.forEach((item) => console.log(item))
       process.exit(1)

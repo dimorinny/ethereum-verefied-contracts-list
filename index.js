@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const {checkAddress} = require('./checker/checks/address')
 const {checkContract} = require('./checker/checks/contract')
 const {provideChangedContractsList} = require('./checker/contracts')
