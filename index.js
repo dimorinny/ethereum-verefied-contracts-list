@@ -1,4 +1,5 @@
 const {checkAddress} = require('./checker/checks/address')
+const {checkContract} = require('./checker/checks/contract')
 const {provideChangedContractsList} = require('./checker/contracts')
 const {ProblemsRegistry} = require('./checker/problems')
 
@@ -9,6 +10,10 @@ async function check (registry, contracts) {
     console.log('Check Address step starting...')
     await checkAddress(registry, contract)
     console.log('Check Address step completed')
+
+    console.log('Check Contract step starting...')
+    await checkContract(registry, contract)
+    console.log('Check Contract step completed')
   }
 }
 

@@ -12,7 +12,7 @@ async function checkAddress (registry, folder) {
   if (!fs.existsSync(configurationPath)) {
     registry.addProblem(
       createProblem(
-        `Configuration file ${configurationPath} is not exist`
+        `configuration file ${configurationPath} is not exist`
       )
     )
     return
