@@ -8,11 +8,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "test": "./index.js"
+    "test": "./check.js"
   },
   "dependencies": {
     "ethereum-contract-verifier": "dimorinny/ethereum-contract-verifier",
-    "js-yaml": "^3.11.0",
-    "nodegit": "^0.21.1"
+    "js-yaml": "^3.11.0"
   }
 }
