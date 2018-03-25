@@ -7,11 +7,6 @@ async function readFileAsync (path) {
   return await readFile(path, 'utf8')
 }
 
-async function writeFileAsync (path, content) {
-  const writeFile = promisify(fs.writeFile)
-  return await writeFile(path, content)
-}
-
 function readDirectory (path) {
   return fs.readdirSync(path)
     .filter(currentFile => fs.statSync(join(path, currentFile)).isDirectory())
@@ -19,7 +14,6 @@ function readDirectory (path) {
 }
 
 module.exports = {
-  writeFileAsync,
   readFileAsync,
   readDirectory
 }
