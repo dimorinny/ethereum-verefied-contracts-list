@@ -1,10 +1,15 @@
+const fs = require('fs')
 const {promisify} = require('util')
 const {join} = require('path')
-const fs = require('fs')
 
 async function readFileAsync (path) {
   const readFile = promisify(fs.readFile)
-  return readFile(path, 'utf8')
+  return await readFile(path, 'utf8')
+}
+
+async function writeFileAsync (path, content) {
+  const writeFile = promisify(fs.writeFile)
+  return await writeFile(path, content)
 }
 
 function readDirectory (path) {
@@ -14,6 +19,7 @@ function readDirectory (path) {
 }
 
 module.exports = {
+  writeFileAsync,
   readFileAsync,
   readDirectory
 }
