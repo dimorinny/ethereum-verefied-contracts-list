@@ -27,4 +27,12 @@ const contracts = provideContractsList('contracts')
 console.log(`Found ${contracts.length} changed (or added) contracts`)
 
 check(registry, contracts)
-  .then(() => registry.exit())
+  .then(() => {
+    const passed = registry.printAndGetResult()
+
+    if (passed) {
+      process.exit(0)
+    } else {
+      process.exit(1)
+    }
+  })
