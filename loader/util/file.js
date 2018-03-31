@@ -6,6 +6,12 @@ async function writeFileAsync (path, content) {
   return await writeFile(path, content)
 }
 
+async function readFileAsync (path) {
+  const readFile = promisify(fs.readFile)
+  return await readFile(path, 'utf8')
+}
+
 module.exports = {
-  writeFileAsync
+  writeFileAsync,
+  readFileAsync
 }

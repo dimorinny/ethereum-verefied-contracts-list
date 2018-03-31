@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const {loadAddresses} = require('./loader/api')
-const {writeFileAsync} = require('./loader/util/file')
+const {loadAddresses, loadContracts} = require('./loader/api')
+const {writeFileAsync, readFileAsync} = require('./loader/util/file')
 
 const args = require('yargs')
   .usage('Usage: $0 <cmd> [options]')
@@ -31,10 +31,41 @@ const args = require('yargs')
     },
     async ({output, from, to}) => {
       console.log(`Start loading addresses from etherscan for pages from ${from} to ${to}...`)
-      const addresses = await loadAddresses(from, to)
 
-      console.log(`Save ${addresses.length} addresses to ${output}...`)
-      await writeFileAsync(output, JSON.stringify(addresses, null, 4))
+      loadAddresses(from, to)
+        .then(addresses => {
+          console.log(`Save ${addresses.length} addresses to ${output}...`)
+          writeFileAsync(output, JSON.stringify(addresses, null, 4))
+        })
+        .catch(e => {
+          console.error(e)
+          process.exit(1)
+        })
+    }
+  )
+  .command(
+    'fetch-contracts [options]',
+    'Fetch contracts from etherscan',
+    {
+      input: {
+        describe: 'Json file with addresses, that fetched by fetch-addresses command',
+        default: 'input.json',
+        type: 'string',
+        required: true
+      }
+    },
+    ({input}) => {
+      readFileAsync(input)
+        .then(addresses => JSON.parse(addresses))
+        .then(addresses => {
+          console.log(`Start loading ${addresses.length} contracts from etherscan...`)
+          return loadContracts(addresses)
+        })
+        .then(contracts => console.log(contracts))
+        .catch(e => {
+          console.error(e)
+          process.exit(1)
+        })
     }
   )
   .argv

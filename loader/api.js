@@ -1,6 +1,7 @@
 const cheerio = require('cheerio')
 const fetch = require('node-fetch')
 const retry = require('async-retry')
+const {Contract} = require('./contract')
 
 async function wait (timeout) {
   await new Promise((resolve) => setTimeout(resolve, timeout))
@@ -22,6 +23,11 @@ async function loadAddressesForPage (page) {
   const html = await load(`https://etherscan.io/contractsVerified/${page}`)
   const $ = cheerio.load(html)
   return $('table tbody').first().find('tr').map((i, el) => $(el).find('a').text().toLowerCase()).get()
+}
+
+async function loadContractForAddress (address) {
+  const html = await load(`https://etherscan.io/address/${address}`)
+  return Contract.fromHtml(address, html)
 }
 
 async function loadAddresses (from, to) {
@@ -47,26 +53,19 @@ async function loadAddresses (from, to) {
   return result
 }
 
-// async function getContractValues (address) {
-//   const values = { address }
-//
-//   const html = await getHTML(`https://etherscan.io/address/${address}`)
-//   const $ = cheerio.load(html)
-//
-//   const table = $('div#ContentPlaceHolder1_contractCodeDiv table')
-//   values.name = $($(table[0]).find('td')[1]).text().trim()
-//   values.compiler = $($(table[0]).find('td')[3]).text().trim()
-//   values.optimizer = parseInt($($(table[1]).find('td')[3]).text().trim(), 10)
-//
-//   const code = $('div#dividcode')
-//   values.source = code.find('pre#editor').text().trim()
-//   values.abi = code.find('pre#js-copytextarea2').text().trim()
-//   values.bin = code.find('div#verifiedbytecode2').text().trim()
-//   values.bzzr = code.find('.wordwrap').last().text().trim()
-//
-//   return values
-// }
+async function loadContracts (addresses) {
+  const result = []
+
+  for (const address of addresses) {
+    console.log(`Starting loading contract for address: ${address}`)
+    const loadedContract = await loadContractForAddress(address)
+    result.push(loadedContract)
+  }
+
+  return result
+}
 
 module.exports = {
-  loadAddresses
+  loadAddresses,
+  loadContracts
 }
