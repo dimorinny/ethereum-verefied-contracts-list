@@ -1,0 +1,5 @@
+contract-name: MultiSigWalletWithDailyLimit
+entrypoint: MultiSigWalletWithDailyLimit.sol
+contract-address: '0x00cf36853aa4024fb5bf5cc377dfd85844b411a0'
+network: mainnet
+compiler: v0.4.19+commit.c4cbbb05

@@ -1,0 +1,5 @@
+contract-name: SovTokenCrowdsale
+entrypoint: SovTokenCrowdsale.sol
+contract-address: '0xb9fb352bc8872a861bda5b56442c735bae94a708'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

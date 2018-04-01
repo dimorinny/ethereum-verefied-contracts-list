@@ -1,0 +1,6 @@
+contract-name: GalacticX
+entrypoint: GalacticX.sol
+contract-address: '0x5c13a9ad2601eeec34672c655d2ca994a360c4a0'
+network: mainnet
+compiler: v0.4.16+commit.d7661dd9
+optimization-runs: 200

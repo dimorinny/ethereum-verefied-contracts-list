@@ -1,0 +1,5 @@
+contract-name: IagonToken
+entrypoint: IagonToken.sol
+contract-address: '0xa14d6d3d0f6bcfb2f658291e2a341bad316f1032'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910

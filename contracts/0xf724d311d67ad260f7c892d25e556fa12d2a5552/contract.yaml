@@ -1,0 +1,5 @@
+contract-name: TV
+entrypoint: TV.sol
+contract-address: '0xf724d311d67ad260f7c892d25e556fa12d2a5552'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

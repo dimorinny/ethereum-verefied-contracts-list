@@ -1,0 +1,5 @@
+contract-name: ESCBCoin
+entrypoint: ESCBCoin.sol
+contract-address: '0x27bf1f282ee96cdb4bb921c961fe081f397e03e4'
+network: mainnet
+compiler: v0.4.19+commit.c4cbbb05

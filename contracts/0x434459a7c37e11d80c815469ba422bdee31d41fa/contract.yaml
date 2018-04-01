@@ -1,0 +1,5 @@
+contract-name: DECEX
+entrypoint: DECEX.sol
+contract-address: '0x434459a7c37e11d80c815469ba422bdee31d41fa'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

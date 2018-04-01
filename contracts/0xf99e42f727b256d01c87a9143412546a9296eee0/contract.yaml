@@ -1,0 +1,5 @@
+contract-name: Lending
+entrypoint: Lending.sol
+contract-address: '0xf99e42f727b256d01c87a9143412546a9296eee0'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

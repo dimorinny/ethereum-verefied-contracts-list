@@ -1,0 +1,5 @@
+contract-name: Phoenixcurrency
+entrypoint: Phoenixcurrency.sol
+contract-address: '0xcb8ff029be361734fead776635f7cfb6c8bd7644'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

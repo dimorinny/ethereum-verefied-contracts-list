@@ -1,0 +1,6 @@
+contract-name: EPXAirDrop
+entrypoint: EPXAirDrop.sol
+contract-address: '0xed5b79ef128a9b6da1a3a1aab935bcbf465e7f83'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910
+optimization-runs: 200

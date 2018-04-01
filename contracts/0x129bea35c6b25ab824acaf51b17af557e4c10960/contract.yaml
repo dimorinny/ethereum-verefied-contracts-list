@@ -1,0 +1,5 @@
+contract-name: DocnotaToken
+entrypoint: DocnotaToken.sol
+contract-address: '0x129bea35c6b25ab824acaf51b17af557e4c10960'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

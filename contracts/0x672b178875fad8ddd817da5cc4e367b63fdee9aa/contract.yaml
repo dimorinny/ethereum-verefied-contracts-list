@@ -1,0 +1,5 @@
+contract-name: STEM
+entrypoint: STEM.sol
+contract-address: '0x672b178875fad8ddd817da5cc4e367b63fdee9aa'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

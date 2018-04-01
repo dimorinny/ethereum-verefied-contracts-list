@@ -1,0 +1,5 @@
+contract-name: PegasusToken
+entrypoint: PegasusToken.sol
+contract-address: '0x75f292a24664d4c46ffc9b5a87d5d7f246b9c12a'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

@@ -1,0 +1,5 @@
+contract-name: AquaSale
+entrypoint: AquaSale.sol
+contract-address: '0xfeae95fd8555d22abed64640c21820b50022aed5'
+network: mainnet
+compiler: v0.4.20+commit.3155dd80

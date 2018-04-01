@@ -1,0 +1,6 @@
+contract-name: EarlyAccessKit
+entrypoint: EarlyAccessKit.sol
+contract-address: '0xb53df9c240a139825b949cbd43753421dbe57a7e'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

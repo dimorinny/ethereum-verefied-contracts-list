@@ -1,0 +1,5 @@
+contract-name: TokenSale
+entrypoint: TokenSale.sol
+contract-address: '0x547116a8c592c4d76f9d843af04f5a66cfa32ccb'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

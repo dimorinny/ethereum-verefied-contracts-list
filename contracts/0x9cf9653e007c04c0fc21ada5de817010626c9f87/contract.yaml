@@ -1,0 +1,5 @@
+contract-name: Silver
+entrypoint: Silver.sol
+contract-address: '0x9cf9653e007c04c0fc21ada5de817010626c9f87'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

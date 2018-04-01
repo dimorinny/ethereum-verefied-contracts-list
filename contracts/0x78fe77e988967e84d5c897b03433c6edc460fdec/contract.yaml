@@ -1,0 +1,5 @@
+contract-name: Aramco
+entrypoint: Aramco.sol
+contract-address: '0x78fe77e988967e84d5c897b03433c6edc460fdec'
+network: mainnet
+compiler: v0.4.20+commit.3155dd80

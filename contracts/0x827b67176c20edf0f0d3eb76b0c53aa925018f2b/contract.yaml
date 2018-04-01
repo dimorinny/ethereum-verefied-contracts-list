@@ -1,0 +1,5 @@
+contract-name: NSCDistributionContract
+entrypoint: NSCDistributionContract.sol
+contract-address: '0x827b67176c20edf0f0d3eb76b0c53aa925018f2b'
+network: mainnet
+compiler: v0.4.21-nightly.2018.3.6+commit.a9e02acc

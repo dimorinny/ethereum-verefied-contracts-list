@@ -1,0 +1,5 @@
+contract-name: Greenbit
+entrypoint: Greenbit.sol
+contract-address: '0xb55cbc064fa6662029753b68d89037f284af658c'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

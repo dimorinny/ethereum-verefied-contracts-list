@@ -1,0 +1,6 @@
+contract-name: Goo
+entrypoint: Goo.sol
+contract-address: '0xdda9bcd985b1169607546b52910a0269dff5baf1'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

@@ -1,0 +1,5 @@
+contract-name: SCAMToken
+entrypoint: SCAMToken.sol
+contract-address: '0x88529673ddadb3a7572ff9b1275604d330df6fc9'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

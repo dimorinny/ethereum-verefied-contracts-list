@@ -1,0 +1,5 @@
+contract-name: BetexToken
+entrypoint: BetexToken.sol
+contract-address: '0xbd270f9a96ed49a1c82055a22ad9b8eec564097f'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

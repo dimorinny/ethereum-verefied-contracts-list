@@ -1,0 +1,6 @@
+contract-name: TokenLayer
+entrypoint: TokenLayer.sol
+contract-address: '0xd359e3f53b5d4e11b8b11dc0772448f380accf3c'
+network: mainnet
+compiler: v0.4.20+commit.3155dd80
+optimization-runs: 200

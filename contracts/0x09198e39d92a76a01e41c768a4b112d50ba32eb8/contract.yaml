@@ -1,0 +1,6 @@
+contract-name: AxtrustICOToken
+entrypoint: AxtrustICOToken.sol
+contract-address: '0x09198e39d92a76a01e41c768a4b112d50ba32eb8'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910
+optimization-runs: 200

@@ -1,0 +1,5 @@
+contract-name: FoolToken
+entrypoint: FoolToken.sol
+contract-address: '0xb8a1de113ecfafb9e12adcc76673c69068178438'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

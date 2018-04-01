@@ -1,0 +1,5 @@
+contract-name: DARTTOKEN
+entrypoint: DARTTOKEN.sol
+contract-address: '0x70d146a7dc622772b9d4b4fc02f28516ce237011'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

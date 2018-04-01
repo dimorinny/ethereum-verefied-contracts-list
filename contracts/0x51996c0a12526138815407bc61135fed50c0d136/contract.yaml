@@ -1,0 +1,6 @@
+contract-name: AllForOne
+entrypoint: AllForOne.sol
+contract-address: '0x51996c0a12526138815407bc61135fed50c0d136'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

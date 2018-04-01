@@ -1,0 +1,5 @@
+contract-name: Gold
+entrypoint: Gold.sol
+contract-address: '0x632563df1aba8caff260de9902e7da58ff6c8179'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

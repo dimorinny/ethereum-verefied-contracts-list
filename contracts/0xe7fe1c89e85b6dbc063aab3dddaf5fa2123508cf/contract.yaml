@@ -1,0 +1,5 @@
+contract-name: NerdShitCoin
+entrypoint: NerdShitCoin.sol
+contract-address: '0xe7fe1c89e85b6dbc063aab3dddaf5fa2123508cf'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

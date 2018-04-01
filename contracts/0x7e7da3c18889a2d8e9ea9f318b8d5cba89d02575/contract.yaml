@@ -1,0 +1,5 @@
+contract-name: StarCoin
+entrypoint: StarCoin.sol
+contract-address: '0x7e7da3c18889a2d8e9ea9f318b8d5cba89d02575'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

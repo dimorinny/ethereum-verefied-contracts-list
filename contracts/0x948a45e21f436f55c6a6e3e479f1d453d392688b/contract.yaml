@@ -1,0 +1,5 @@
+contract-name: DURIANX
+entrypoint: DURIANX.sol
+contract-address: '0x948a45e21f436f55c6a6e3e479f1d453d392688b'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

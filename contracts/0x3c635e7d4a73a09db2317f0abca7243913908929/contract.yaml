@@ -1,0 +1,5 @@
+contract-name: Lotto
+entrypoint: Lotto.sol
+contract-address: '0x3c635e7d4a73a09db2317f0abca7243913908929'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910

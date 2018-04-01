@@ -1,0 +1,5 @@
+contract-name: ESCBTokenSale
+entrypoint: ESCBTokenSale.sol
+contract-address: '0x27a36731337cdee330d99b980b73e24f6e188618'
+network: mainnet
+compiler: v0.4.19+commit.c4cbbb05

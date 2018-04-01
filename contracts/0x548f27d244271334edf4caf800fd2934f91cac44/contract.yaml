@@ -1,0 +1,6 @@
+contract-name: CETACEA
+entrypoint: CETACEA.sol
+contract-address: '0x548f27d244271334edf4caf800fd2934f91cac44'
+network: mainnet
+compiler: v0.4.19+commit.c4cbbb05
+optimization-runs: 200

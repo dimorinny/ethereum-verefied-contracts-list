@@ -1,0 +1,5 @@
+contract-name: TYBTOKEN
+entrypoint: TYBTOKEN.sol
+contract-address: '0xb4435ca8e8e8503ca23d84233051f6dbc8548a6e'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

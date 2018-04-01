@@ -1,0 +1,5 @@
+contract-name: EthereumDIDRegistry
+entrypoint: EthereumDIDRegistry.sol
+contract-address: '0x160c5ce58e2cc4fe7cc45a9dd569a10083b2a275'
+network: mainnet
+compiler: v0.4.19+commit.c4cbbb05

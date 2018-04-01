@@ -1,0 +1,5 @@
+contract-name: VICOXToken
+entrypoint: VICOXToken.sol
+contract-address: '0xba1b1959684065d83654f52bf2cb01b0c14ca3c5'
+network: mainnet
+compiler: v0.4.20+commit.3155dd80

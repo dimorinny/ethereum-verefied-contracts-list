@@ -1,0 +1,6 @@
+contract-name: ClickRUB
+entrypoint: ClickRUB.sol
+contract-address: '0xd7e53311e79521e68a68d7d8a5fa543143f959fe'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910
+optimization-runs: 200

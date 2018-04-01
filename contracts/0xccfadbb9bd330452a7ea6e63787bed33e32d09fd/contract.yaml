@@ -1,0 +1,6 @@
+contract-name: BurnupGameCore
+entrypoint: BurnupGameCore.sol
+contract-address: '0xccfadbb9bd330452a7ea6e63787bed33e32d09fd'
+network: mainnet
+compiler: v0.4.19+commit.c4cbbb05
+optimization-runs: 200

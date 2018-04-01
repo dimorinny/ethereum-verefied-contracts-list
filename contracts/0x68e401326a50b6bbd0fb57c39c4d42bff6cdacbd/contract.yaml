@@ -1,0 +1,6 @@
+contract-name: StarterLootBox
+entrypoint: StarterLootBox.sol
+contract-address: '0x68e401326a50b6bbd0fb57c39c4d42bff6cdacbd'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

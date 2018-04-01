@@ -1,0 +1,6 @@
+contract-name: CoreContract
+entrypoint: CoreContract.sol
+contract-address: '0x1135053a937e422c27a834642288304e35bb1340'
+network: mainnet
+compiler: v0.4.20+commit.3155dd80
+optimization-runs: 200

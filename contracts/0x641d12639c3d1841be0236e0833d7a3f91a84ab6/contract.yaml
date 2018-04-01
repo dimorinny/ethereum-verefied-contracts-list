@@ -1,0 +1,5 @@
+contract-name: TravelCoin
+entrypoint: TravelCoin.sol
+contract-address: '0x641d12639c3d1841be0236e0833d7a3f91a84ab6'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

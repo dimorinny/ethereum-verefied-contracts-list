@@ -1,0 +1,5 @@
+contract-name: YRQ
+entrypoint: YRQ.sol
+contract-address: '0xe7b2b01225d1b837ea741b21eab1f0fc3cf89df8'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

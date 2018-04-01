@@ -1,0 +1,5 @@
+contract-name: STTR
+entrypoint: STTR.sol
+contract-address: '0xbc302ceb57b06cc39ce9e3b177c5e52cd7b1417e'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910
