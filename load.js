@@ -1,9 +1,13 @@
 #!/usr/bin/env node
 
+const {join} = require('path')
+const Parallel = require('async-parallel')
 const {loadAddresses, loadContracts} = require('./loader/api')
-const {writeFileAsync, readFileAsync} = require('./loader/util/file')
+const {writeFileAsync, readFileAsync, directoryExists} = require('./loader/util/file')
 
-const args = require('yargs')
+const SAVE_CONTRACTS_DATA_POOL_SIZE = 5
+
+require('yargs')
   .usage('Usage: $0 <cmd> [options]')
   .help('help')
   .alias('help', 'h')
@@ -29,7 +33,7 @@ const args = require('yargs')
         required: false
       }
     },
-    async ({output, from, to}) => {
+    ({output, from, to}) => {
       console.log(`Start loading addresses from etherscan for pages from ${from} to ${to}...`)
 
       loadAddresses(from, to)
@@ -52,16 +56,34 @@ const args = require('yargs')
         default: 'input.json',
         type: 'string',
         required: true
+      },
+      output: {
+        describe: 'Directory with contracts',
+        default: 'contracts',
+        type: 'string',
+        required: true
       }
     },
-    ({input}) => {
+    ({input, output}) => {
       readFileAsync(input)
         .then(addresses => JSON.parse(addresses))
+        .then(addresses => addresses.filter(address => !directoryExists(
+          join(output, address)
+        )))
         .then(addresses => {
           console.log(`Start loading ${addresses.length} contracts from etherscan...`)
           return loadContracts(addresses)
         })
-        .then(contracts => console.log(contracts))
+        .then(contracts => {
+          console.log(`Loaded ${contracts.length} contracts. Saving to ${output} directory...`)
+          return Parallel.invoke(
+            contracts.map(contract => async () => {
+              console.log(`Saving contract ${contract.address}...`)
+              contract.save(output)
+            }),
+            SAVE_CONTRACTS_DATA_POOL_SIZE
+          )
+        })
         .catch(e => {
           console.error(e)
           process.exit(1)

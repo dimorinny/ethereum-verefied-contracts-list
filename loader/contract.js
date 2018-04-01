@@ -1,13 +1,46 @@
+const {join} = require('path')
 const cheerio = require('cheerio')
+const {dump} = require('js-yaml')
+const {directoryExists, createDirectory, writeFileAsync} = require('./util/file')
 
 class Contract {
   constructor (address, name, sources, abi, compiler, optimizations) {
     this.address = address
     this.name = name
+    this.fileName = `${name}.sol`
     this.sources = sources
     this.abi = abi
     this.compiler = compiler
     this.optimizations = optimizations
+  }
+
+  async save (output) {
+    const contractPath = join(output, this.address)
+
+    if (directoryExists(contractPath)) {
+      console.log(`${this.address} directory already exists. Doing nothing...`)
+    } else {
+      const sourcesPath = join(contractPath, 'src')
+      const sourcesFilePath = join(sourcesPath, this.fileName)
+      const abiPath = join(contractPath, 'abi.json')
+      const configurationPath = join(contractPath, 'contract.yaml')
+
+      await createDirectory(contractPath)
+      await createDirectory(sourcesPath)
+      await writeFileAsync(sourcesFilePath, this.sources)
+      await writeFileAsync(abiPath, this.abi)
+
+      const configuration = dump({
+        'contract-name': this.name,
+        'entrypoint': this.fileName,
+        'contract-address': this.address,
+        'network': 'mainnet',
+        'compiler': this.compiler,
+        ...this.optimizations && {'optimization-runs': this.optimizations}
+      })
+
+      await writeFileAsync(configurationPath, configuration)
+    }
   }
 }
 

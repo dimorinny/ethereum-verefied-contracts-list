@@ -1,13 +1,16 @@
 #!/usr/bin/env node
 
+const Parallel = require('async-parallel')
 const {checkAddress} = require('./checker/checks/address')
 const {checkContract} = require('./checker/checks/contract')
 const {provideContractsList} = require('./checker/contracts')
 const {ProblemsRegistry} = require('./checker/problems')
 
+const PARALLEL_POOL_SIZE = 5
+
 async function check (registry, contracts) {
-  await Promise.all(
-    contracts.map(async contract => {
+  await Parallel.invoke(
+    contracts.map(contract => async () => {
       console.log(`Starting analyzing contract: ${contract}...`)
 
       console.log('Check Address step starting...')
@@ -17,7 +20,8 @@ async function check (registry, contracts) {
       console.log('Check Contract step starting...')
       await checkContract(registry, contract)
       console.log('Check Contract step completed')
-    })
+    }),
+    PARALLEL_POOL_SIZE
   )
 }
 

@@ -11,7 +11,18 @@ async function readFileAsync (path) {
   return await readFile(path, 'utf8')
 }
 
+async function createDirectory (path) {
+  const makeDirectory = promisify(fs.mkdir)
+  return await makeDirectory(path)
+}
+
+function directoryExists (path) {
+  return fs.existsSync(path) && fs.statSync(path).isDirectory()
+}
+
 module.exports = {
   writeFileAsync,
-  readFileAsync
+  readFileAsync,
+  directoryExists,
+  createDirectory
 }

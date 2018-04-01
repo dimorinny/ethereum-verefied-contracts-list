@@ -1,6 +1,7 @@
 const cheerio = require('cheerio')
 const fetch = require('node-fetch')
 const retry = require('async-retry')
+const Parallel = require('async-parallel')
 const {Contract} = require('./contract')
 
 async function wait (timeout) {
@@ -53,14 +54,16 @@ async function loadAddresses (from, to) {
   return result
 }
 
+const LOAD_CONTRACTS_PARALLEL_POOL_SIZE = 2
+
 async function loadContracts (addresses) {
   const result = []
 
-  for (const address of addresses) {
+  await Parallel.invoke(addresses.map(address => async () => {
     console.log(`Starting loading contract for address: ${address}`)
     const loadedContract = await loadContractForAddress(address)
     result.push(loadedContract)
-  }
+  }), LOAD_CONTRACTS_PARALLEL_POOL_SIZE)
 
   return result
 }
