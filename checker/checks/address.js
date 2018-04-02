@@ -1,7 +1,6 @@
 const path = require('path')
 const yaml = require('js-yaml')
-const fs = require('fs')
-const {readFileAsync} = require('../util/file')
+const fs = require('fs-extra')
 
 const CONFIGURATION_FILE_NAME = 'contract.yaml'
 const CONFIGURATION_CONTRACT_ADDRESS_FIELD = 'contract-address'
@@ -18,7 +17,7 @@ async function checkAddress (registry, folder) {
     return
   }
 
-  const configurationContent = await readFileAsync(configurationPath)
+  const configurationContent = await fs.readFile(configurationPath)
   const configuration = yaml.safeLoad(configurationContent)
 
   const folderName = path.basename(folder)

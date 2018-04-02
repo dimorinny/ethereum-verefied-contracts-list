@@ -1,12 +1,9 @@
 const cheerio = require('cheerio')
 const fetch = require('node-fetch')
 const retry = require('async-retry')
+const delay = require('delay')
 const Parallel = require('async-parallel')
 const {Contract} = require('./contract')
-
-async function wait (timeout) {
-  await new Promise((resolve) => setTimeout(resolve, timeout))
-}
 
 async function load (url) {
   return await retry(async () => {
@@ -48,7 +45,7 @@ async function loadAddresses (from, to) {
     result = result.concat(addresses)
 
     console.log(`Waiting for further fetching`)
-    await wait(1000)
+    await delay(1000)
   }
 
   return result

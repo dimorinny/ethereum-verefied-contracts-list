@@ -13,13 +13,13 @@ async function check (registry, contracts) {
     contracts.map(contract => async () => {
       console.log(`Starting analyzing contract: ${contract}...`)
 
-      console.log('Check Address step starting...')
+      console.log(`${contract}: Check Address step starting...`)
       await checkAddress(registry, contract)
-      console.log('Check Address step completed')
+      console.log(`${contract}: Check Address step completed`)
 
-      console.log('Check Contract step starting...')
+      console.log(`${contract}: Check Contract step starting...`)
       await checkContract(registry, contract)
-      console.log('Check Contract step completed')
+      console.log(`${contract}: Check Contract step completed`)
     }),
     PARALLEL_POOL_SIZE
   )
@@ -39,4 +39,8 @@ check(registry, contracts)
     } else {
       process.exit(1)
     }
+  })
+  .catch(e => {
+    console.error(e)
+    process.exit(1)
   })

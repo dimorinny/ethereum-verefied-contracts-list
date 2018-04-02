@@ -1,7 +1,8 @@
 const {join} = require('path')
 const cheerio = require('cheerio')
-const {dump} = require('js-yaml')
-const {directoryExists, createDirectory, writeFileAsync} = require('./util/file')
+const yaml = require('js-yaml')
+const fs = require('fs-extra')
+const {directoryExists} = require('./util/file')
 
 class Contract {
   constructor (address, name, sources, abi, compiler, optimizations) {
@@ -25,12 +26,12 @@ class Contract {
       const abiPath = join(contractPath, 'abi.json')
       const configurationPath = join(contractPath, 'contract.yaml')
 
-      await createDirectory(contractPath)
-      await createDirectory(sourcesPath)
-      await writeFileAsync(sourcesFilePath, this.sources)
-      await writeFileAsync(abiPath, this.abi)
+      await fs.mkdir(contractPath)
+      await fs.mkdir(sourcesPath)
+      await fs.writeFile(sourcesFilePath, this.sources)
+      await fs.writeFile(abiPath, this.abi)
 
-      const configuration = dump({
+      const configuration = yaml.dump({
         'contract-name': this.name,
         'entrypoint': this.fileName,
         'contract-address': this.address,
@@ -39,7 +40,7 @@ class Contract {
         ...this.optimizations && {'optimization-runs': this.optimizations}
       })
 
-      await writeFileAsync(configurationPath, configuration)
+      await fs.writeFile(configurationPath, configuration)
     }
   }
 }

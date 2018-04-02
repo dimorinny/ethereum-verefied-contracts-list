@@ -1,8 +1,6 @@
 const path = require('path')
-const fs = require('fs')
+const fs = require('fs-extra')
 const {verify} = require('ethereum-contract-verifier/lib/verify')
-const {readFileAsync} = require('../util/file')
-const {isEquals} = require('../util/object')
 
 async function checkContract (registry, folder) {
   try {
@@ -43,11 +41,11 @@ async function checkAbi (registry, folder, verificationResult) {
       return
     }
 
-    const abiContent = await readFileAsync(abiPath)
+    const abiContent = await fs.readFile(abiPath)
     const abi = JSON.parse(abiContent)
     const compiledAbi = JSON.parse(verificationResult.abi)
 
-    if (!isEquals(abi, compiledAbi)) {
+    if (JSON.stringify(abi) !== JSON.stringify(compiledAbi)) {
       registry.addProblem(
         createProblem(
           `Failed to match local abi: ${abiContent} and generated abi: ${verificationResult.abi}`

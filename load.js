@@ -2,8 +2,9 @@
 
 const {join} = require('path')
 const Parallel = require('async-parallel')
+const fs = require('fs-extra')
 const {loadAddresses, loadContracts} = require('./loader/api')
-const {writeFileAsync, readFileAsync, directoryExists} = require('./loader/util/file')
+const {directoryExists} = require('./loader/util/file')
 
 const SAVE_CONTRACTS_DATA_POOL_SIZE = 5
 
@@ -39,7 +40,7 @@ require('yargs')
       loadAddresses(from, to)
         .then(addresses => {
           console.log(`Save ${addresses.length} addresses to ${output}...`)
-          writeFileAsync(output, JSON.stringify(addresses, null, 4))
+          fs.writeJson(output, addresses)
         })
         .catch(e => {
           console.error(e)
@@ -65,8 +66,7 @@ require('yargs')
       }
     },
     ({input, output}) => {
-      readFileAsync(input)
-        .then(addresses => JSON.parse(addresses))
+      fs.readJson(input)
         .then(addresses => addresses.filter(address => !directoryExists(
           join(output, address)
         )))
