@@ -5,14 +5,6 @@ const {join} = require('path')
 const BASE_BRANCH_NAME = 'master'
 
 async function provideContractsList (baseDirectory, contractsFolder) {
-  const changedContracts = await getChangedContracts(baseDirectory, contractsFolder)
-
-  if (changedContracts.length !== 0) {
-    console.log(`Found changed contracts: ${changedContracts}`)
-  } else {
-    console.log(`There is no changed contracts`)
-  }
-
   const allContracts = fs.readdirSync(contractsFolder)
     .filter(currentFile => fs.statSync(join(contractsFolder, currentFile)).isDirectory())
     .map(item => join(contractsFolder, item))
@@ -23,6 +15,14 @@ async function provideContractsList (baseDirectory, contractsFolder) {
     console.log(`Executing tests on base branch (${BASE_BRANCH_NAME}). For this reason we should check all contracts`)
     return allContracts
   } else {
+    const changedContracts = await getChangedContracts(baseDirectory, contractsFolder)
+
+    if (changedContracts.length !== 0) {
+      console.log(`Found changed contracts: ${changedContracts}`)
+    } else {
+      console.log(`There is no changed contracts`)
+    }
+
     console.log(`Executing tests on not base branch (${BASE_BRANCH_NAME}). For this reason we should check only changed contracts`)
     return allContracts
       .filter(item => changedContracts.has(item))
@@ -32,7 +32,7 @@ async function provideContractsList (baseDirectory, contractsFolder) {
 async function getChangedContracts (baseDirectory, contractsFolder) {
   const contractPathRegex = `^${contractsFolder}/0x[a-fA-F0-9]{40}`
 
-  const diff = await git(baseDirectory).diff(['--name-only', 'origin/master'])
+  const diff = await git(baseDirectory).diff(['--name-only', 'origin'])
 
   const changedContractsDirectories = diff
     .split('\n')
