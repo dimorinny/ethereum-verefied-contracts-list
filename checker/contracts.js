@@ -11,7 +11,7 @@ async function provideContractsList (baseDirectory, contractsFolder) {
     console.log(`There is no changed contracts`)
   }
 
-  const allContracts = fs.readdirSync(contractsFolder)
+  return fs.readdirSync(contractsFolder)
     .filter(currentFile => fs.statSync(join(contractsFolder, currentFile)).isDirectory())
     .map(item => join(contractsFolder, item))
     .filter(item => changedContracts.has(item))
