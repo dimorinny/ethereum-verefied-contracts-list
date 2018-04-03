@@ -1,0 +1,5 @@
+contract-name: GenevExch
+entrypoint: sources.sol
+contract-address: '0xdafae9d2ecfa1f8bba620680f296c3404770e6fe'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

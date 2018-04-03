@@ -1,0 +1,5 @@
+contract-name: Mengudara
+entrypoint: sources.sol
+contract-address: '0x06f1d05d813bc4e2c7b5923be46145521a69ad79'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910

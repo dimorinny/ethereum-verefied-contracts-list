@@ -1,0 +1,6 @@
+contract-name: ItemToken
+entrypoint: sources.sol
+contract-address: '0xaf1119ac13da83961883773f715e58d43e2aae07'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

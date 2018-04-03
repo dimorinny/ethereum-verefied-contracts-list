@@ -1,0 +1,6 @@
+contract-name: CashTron
+entrypoint: sources.sol
+contract-address: '0xdcb5fcc314c553eaeac4169d1c230bd5c7d026f7'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910
+optimization-runs: 200

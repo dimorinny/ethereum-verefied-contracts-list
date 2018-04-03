@@ -1,0 +1,6 @@
+contract-name: NaviToken
+entrypoint: sources.sol
+contract-address: '0x588047365df5ba589f923604aac23d673555c623'
+network: mainnet
+compiler: v0.4.19+commit.c4cbbb05
+optimization-runs: 200

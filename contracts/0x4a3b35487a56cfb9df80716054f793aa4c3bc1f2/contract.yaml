@@ -1,0 +1,6 @@
+contract-name: depositofferToken
+entrypoint: sources.sol
+contract-address: '0x4a3b35487a56cfb9df80716054f793aa4c3bc1f2'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910
+optimization-runs: 200
