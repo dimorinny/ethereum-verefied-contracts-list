@@ -8,7 +8,6 @@ class Contract {
   constructor (address, name, sources, abi, compiler, optimizations) {
     this.address = address
     this.name = name
-    this.fileName = `${name}.sol`
     this.sources = sources
     this.abi = abi
     this.compiler = compiler
@@ -17,12 +16,13 @@ class Contract {
 
   async save (output) {
     const contractPath = join(output, this.address)
+    const sources = 'sources.sol'
 
     if (directoryExists(contractPath)) {
       console.log(`${this.address} directory already exists. Doing nothing...`)
     } else {
       const sourcesPath = join(contractPath, 'src')
-      const sourcesFilePath = join(sourcesPath, this.fileName)
+      const sourcesFilePath = join(sourcesPath, sources)
       const abiPath = join(contractPath, 'abi.json')
       const configurationPath = join(contractPath, 'contract.yaml')
 
@@ -33,7 +33,7 @@ class Contract {
 
       const configuration = yaml.dump({
         'contract-name': this.name,
-        'entrypoint': this.fileName,
+        'entrypoint': sources,
         'contract-address': this.address,
         'network': 'mainnet',
         'compiler': this.compiler,

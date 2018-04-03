@@ -1,0 +1,5 @@
+contract-name: x32323
+entrypoint: sources.sol
+contract-address: '0xed98b38f4fc2fcc633465b699f6d983d96e1fe8c'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
