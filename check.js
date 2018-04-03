@@ -26,11 +26,13 @@ async function check (registry, contracts) {
 }
 
 const registry = new ProblemsRegistry()
-const contracts = provideContractsList('contracts')
 
-console.log(`Found ${contracts.length} changed (or added) contracts`)
-
-check(registry, contracts)
+provideContractsList(__dirname, 'contracts')
+  .then(contracts => {
+    console.log(`Found ${contracts.length} changed (or added) contracts`)
+    return contracts
+  })
+  .then(contracts => check(registry, contracts))
   .then(() => {
     const passed = registry.printAndGetResult()
 
