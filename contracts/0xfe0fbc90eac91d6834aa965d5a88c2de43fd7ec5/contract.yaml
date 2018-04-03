@@ -1,0 +1,5 @@
+contract-name: TokenVesting
+entrypoint: TokenVesting.sol
+contract-address: '0xfe0fbc90eac91d6834aa965d5a88c2de43fd7ec5'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

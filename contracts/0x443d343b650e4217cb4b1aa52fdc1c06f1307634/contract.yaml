@@ -1,0 +1,5 @@
+contract-name: EthereumUnionToken
+entrypoint: EthereumUnionToken.sol
+contract-address: '0x443d343b650e4217cb4b1aa52fdc1c06f1307634'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
