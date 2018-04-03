@@ -2,8 +2,6 @@ const fs = require('fs-extra')
 const git = require('simple-git/promise')
 const {join} = require('path')
 
-const BASE_BRANCH_NAME = 'master'
-
 async function provideContractsList (baseDirectory, contractsFolder) {
   const changedContracts = await getChangedContracts(baseDirectory, contractsFolder)
 
@@ -16,17 +14,7 @@ async function provideContractsList (baseDirectory, contractsFolder) {
   const allContracts = fs.readdirSync(contractsFolder)
     .filter(currentFile => fs.statSync(join(contractsFolder, currentFile)).isDirectory())
     .map(item => join(contractsFolder, item))
-
-  const currentBranchName = await getCurrentBranchName(baseDirectory)
-
-  if (currentBranchName === BASE_BRANCH_NAME) {
-    console.log(`Executing tests on base branch (${currentBranchName}). For this reason we should check all contracts`)
-    return allContracts
-  } else {
-    console.log(`Executing tests on not base branch (${currentBranchName}). For this reason we should check only changed contracts`)
-    return allContracts
-      .filter(item => changedContracts.has(item))
-  }
+    .filter(item => changedContracts.has(item))
 }
 
 async function getChangedContracts (baseDirectory, contractsFolder) {
@@ -41,11 +29,6 @@ async function getChangedContracts (baseDirectory, contractsFolder) {
     .map((change) => change[0])
 
   return new Set(changedContractsDirectories)
-}
-
-async function getCurrentBranchName (baseDirectory) {
-  const branches = await git(baseDirectory).branch()
-  return branches.current
 }
 
 module.exports = {
