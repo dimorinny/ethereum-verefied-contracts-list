@@ -1,1 +1,1 @@
-language: node_jsnode_js:- 9.2.1
+language: node_jsnode_js:- 9.2.1env:  global:    # get all the branches referencing this commit    - REAL_BRANCH=$(git ls-remote origin | sed -n "\|$TRAVIS_COMMIT\s\+refs/heads/|{s///p}")
