@@ -20,10 +20,10 @@ async function provideContractsList (baseDirectory, contractsFolder) {
   const currentBranchName = await getCurrentBranchName(baseDirectory)
 
   if (currentBranchName === BASE_BRANCH_NAME) {
-    console.log(`Executing tests on base branch (${BASE_BRANCH_NAME}). For this reason we should check all contracts`)
+    console.log(`Executing tests on base branch (${currentBranchName}). For this reason we should check all contracts`)
     return allContracts
   } else {
-    console.log(`Executing tests on not base branch (${BASE_BRANCH_NAME}). For this reason we should check only changed contracts`)
+    console.log(`Executing tests on not base branch (${currentBranchName}). For this reason we should check only changed contracts`)
     return allContracts
       .filter(item => changedContracts.has(item))
   }
