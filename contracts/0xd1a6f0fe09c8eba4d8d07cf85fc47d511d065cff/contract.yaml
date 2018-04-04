@@ -1,0 +1,5 @@
+contract-name: KVC0Token
+entrypoint: KVC0Token.sol
+contract-address: '0xd1a6f0fe09c8eba4d8d07cf85fc47d511d065cff'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

@@ -1,0 +1,5 @@
+contract-name: KVCToken
+entrypoint: KVCToken.sol
+contract-address: '0x209e0fbed2efded2cfaf0eb86122fe8bc37f727f'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

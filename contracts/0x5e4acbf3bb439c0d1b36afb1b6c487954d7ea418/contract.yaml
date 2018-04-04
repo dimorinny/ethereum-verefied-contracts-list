@@ -1,0 +1,6 @@
+contract-name: TESS
+entrypoint: TESS.sol
+contract-address: '0x5e4acbf3bb439c0d1b36afb1b6c487954d7ea418'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910
+optimization-runs: 200

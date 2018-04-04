@@ -1,0 +1,5 @@
+contract-name: LotteryRecharge
+entrypoint: LotteryRecharge.sol
+contract-address: '0xb372752ce9fe76085e32644295f5ced062456a5a'
+network: mainnet
+compiler: v0.4.19+commit.c4cbbb05
