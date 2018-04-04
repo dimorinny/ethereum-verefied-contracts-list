@@ -1,0 +1,5 @@
+contract-name: ADZbuzzCommunityToken
+entrypoint: ADZbuzzCommunityToken.sol
+contract-address: '0xc048ef62bbca699729fc6c30ac349d12cbee3763'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

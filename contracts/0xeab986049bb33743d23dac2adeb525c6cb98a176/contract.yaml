@@ -1,0 +1,6 @@
+contract-name: CoinealToken
+entrypoint: CoinealToken.sol
+contract-address: '0xeab986049bb33743d23dac2adeb525c6cb98a176'
+network: mainnet
+compiler: v0.4.22-nightly.2018.3.30+commit.326d656a
+optimization-runs: 200

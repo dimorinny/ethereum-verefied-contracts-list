@@ -1,0 +1,6 @@
+contract-name: XCareTokenLocked
+entrypoint: XCareTokenLocked.sol
+contract-address: '0x09824e7eb4fd9c1f94b8fd7ace3952668938ab72'
+network: mainnet
+compiler: v0.4.19+commit.c4cbbb05
+optimization-runs: 200

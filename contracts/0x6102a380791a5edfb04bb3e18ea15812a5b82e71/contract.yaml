@@ -1,0 +1,6 @@
+contract-name: GdprCrowdsale
+entrypoint: GdprCrowdsale.sol
+contract-address: '0x6102a380791a5edfb04bb3e18ea15812a5b82e71'
+network: mainnet
+compiler: v0.4.19+commit.c4cbbb05
+optimization-runs: 200
