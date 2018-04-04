@@ -1,6 +1,6 @@
 const path = require('path')
 const fs = require('fs-extra')
-const {verify} = require('ethereum-contract-verifier/lib/verify')
+const {verify} = require('../verification/verify')
 
 async function checkContract (registry, folder) {
   try {

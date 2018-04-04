@@ -15,7 +15,6 @@
     "async-retry": "^1.2.1",
     "cheerio": "^1.0.0-rc.2",
     "delay": "^2.0.0",
-    "ethereum-contract-verifier": "dimorinny/ethereum-contract-verifier",
     "fs-extra": "^5.0.0",
     "js-yaml": "^3.11.0",
     "node-fetch": "^2.1.2",

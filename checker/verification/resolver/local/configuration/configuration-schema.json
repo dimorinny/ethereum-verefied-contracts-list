@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "contract-name": {
+      "type": "string"
+    },
+    "entrypoint": {
+      "type": "string"
+    },
+    "contract-address": {
+      "type": "string",
+      "pattern": "^0x[a-fA-F0-9]{40}$"
+    },
+    "network": {
+      "type": "string",
+      "enum": [
+        "mainnet",
+        "ropsten",
+        "kovan",
+        "rinkeby"
+      ]
+    },
+    "compiler": {
+      "type": "string",
+      "pattern": "^v\\d*.\\d*.\\d*.*$"
+    },
+    "optimization-runs": {
+      "type": "number"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "contract-name",
+    "entrypoint",
+    "contract-address",
+    "network",
+    "compiler"
+  ]
+}
