@@ -1,14 +1,17 @@
 const {resolveProcessor} = require('./processor/resolver')
+const {CompilerRegistry} = require('./resolver/local/compiler')
 const {ContractData} = require('./resolver/local/configuration/configuration')
 const {LocalByteCodeResolver} = require('./resolver/local/local')
 const {BlockChainByteCodeResolver} = require('./resolver/blockchain')
+
+const compilerRegistry = new CompilerRegistry()
 
 async function verify (path) {
   const configuration = await ContractData.load(path)
 
   const localRemoteProcessor = resolveProcessor(configuration.compiler)
 
-  const localResolver = new LocalByteCodeResolver(configuration)
+  const localResolver = new LocalByteCodeResolver(configuration, compilerRegistry)
   const remoteResolver = new BlockChainByteCodeResolver(configuration.network)
 
   const compilationResult = await localResolver.resolve()
