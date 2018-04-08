@@ -1,0 +1,5 @@
+contract-name: HumanStandardToken
+entrypoint: HumanStandardToken.sol
+contract-address: '0x8273b40d299b7c2a8a8e97e80c0a38df19b21d8e'
+network: mainnet
+compiler: v0.4.19+commit.c4cbbb05

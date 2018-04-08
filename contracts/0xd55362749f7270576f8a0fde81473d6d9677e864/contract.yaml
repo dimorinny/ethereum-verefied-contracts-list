@@ -1,0 +1,5 @@
+contract-name: GreenWorldFarmToken
+entrypoint: GreenWorldFarmToken.sol
+contract-address: '0xd55362749f7270576f8a0fde81473d6d9677e864'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

@@ -1,0 +1,6 @@
+contract-name: LOWIQ
+entrypoint: LOWIQ.sol
+contract-address: '0xc5b908eb48ff794179b286789c2d111963da2bb5'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

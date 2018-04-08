@@ -1,0 +1,5 @@
+contract-name: MegaCandy
+entrypoint: MegaCandy.sol
+contract-address: '0xbac5d2c1f334e95eb6c609e059746b5eb4218647'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

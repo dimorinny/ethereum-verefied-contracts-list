@@ -1,0 +1,5 @@
+contract-name: CandyLand
+entrypoint: CandyLand.sol
+contract-address: '0x48fc077618662a07e15815fb7afbfbf2a7ee560a'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

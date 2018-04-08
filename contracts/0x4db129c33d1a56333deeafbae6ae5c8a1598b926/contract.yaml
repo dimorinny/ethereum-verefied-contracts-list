@@ -1,0 +1,5 @@
+contract-name: LandManagement
+entrypoint: LandManagement.sol
+contract-address: '0x4db129c33d1a56333deeafbae6ae5c8a1598b926'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

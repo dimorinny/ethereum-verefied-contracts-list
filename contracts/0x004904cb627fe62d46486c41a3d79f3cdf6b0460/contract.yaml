@@ -1,0 +1,5 @@
+contract-name: HashnodeTestCoin
+entrypoint: HashnodeTestCoin.sol
+contract-address: '0x004904cb627fe62d46486c41a3d79f3cdf6b0460'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

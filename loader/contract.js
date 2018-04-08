@@ -15,6 +15,15 @@ class Contract {
     this.optimizations = optimizations
   }
 
+  isValid () {
+    return this.address &&
+      this.name &&
+      this.fileName &&
+      this.sources &&
+      this.abi &&
+      this.compiler
+  }
+
   async save (output) {
     const contractPath = join(output, this.address)
 

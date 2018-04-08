@@ -1,0 +1,5 @@
+contract-name: KRWT
+entrypoint: KRWT.sol
+contract-address: '0xf1b5190801ad2ba004650692489a41a405bf2d47'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910

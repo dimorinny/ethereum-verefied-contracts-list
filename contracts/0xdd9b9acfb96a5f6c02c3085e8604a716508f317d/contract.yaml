@@ -1,0 +1,5 @@
+contract-name: TurkeyBurgerToken
+entrypoint: TurkeyBurgerToken.sol
+contract-address: '0xdd9b9acfb96a5f6c02c3085e8604a716508f317d'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

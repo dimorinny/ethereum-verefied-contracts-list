@@ -1,0 +1,5 @@
+contract-name: CRYPTAU
+entrypoint: CRYPTAU.sol
+contract-address: '0x3f5b4887bf8d9ef0d4eb5d84ca1335583e6bfc9a'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

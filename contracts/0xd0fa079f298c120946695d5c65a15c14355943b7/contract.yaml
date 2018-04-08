@@ -1,0 +1,5 @@
+contract-name: PODD
+entrypoint: PODD.sol
+contract-address: '0xd0fa079f298c120946695d5c65a15c14355943b7'
+network: mainnet
+compiler: v0.4.20+commit.3155dd80

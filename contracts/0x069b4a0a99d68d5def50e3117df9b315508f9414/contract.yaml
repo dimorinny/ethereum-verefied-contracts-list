@@ -1,0 +1,5 @@
+contract-name: PowerofBubble
+entrypoint: PowerofBubble.sol
+contract-address: '0x069b4a0a99d68d5def50e3117df9b315508f9414'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

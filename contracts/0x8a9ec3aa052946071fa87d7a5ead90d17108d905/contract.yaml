@@ -1,0 +1,5 @@
+contract-name: BunnyToken
+entrypoint: BunnyToken.sol
+contract-address: '0x8a9ec3aa052946071fa87d7a5ead90d17108d905'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

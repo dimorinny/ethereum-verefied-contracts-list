@@ -1,0 +1,6 @@
+contract-name: MultiSigWallet
+entrypoint: MultiSigWallet.sol
+contract-address: '0xb7f23050cbf4bd773935b442269aa7d5c3cf341c'
+network: mainnet
+compiler: v0.4.11+commit.68ef5810
+optimization-runs: 200

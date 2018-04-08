@@ -1,0 +1,5 @@
+contract-name: Seller
+entrypoint: Seller.sol
+contract-address: '0x6027db275318fe43ee284e5d7dc1f6c4f72cf28a'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

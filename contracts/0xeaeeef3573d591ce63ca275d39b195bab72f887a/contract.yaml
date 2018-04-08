@@ -1,0 +1,5 @@
+contract-name: CapitalMatchToken
+entrypoint: CapitalMatchToken.sol
+contract-address: '0xeaeeef3573d591ce63ca275d39b195bab72f887a'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

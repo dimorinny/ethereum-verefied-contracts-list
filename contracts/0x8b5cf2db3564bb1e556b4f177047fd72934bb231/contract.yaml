@@ -1,0 +1,5 @@
+contract-name: POA20
+entrypoint: POA20.sol
+contract-address: '0x8b5cf2db3564bb1e556b4f177047fd72934bb231'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

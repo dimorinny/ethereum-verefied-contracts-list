@@ -1,0 +1,5 @@
+contract-name: ParaTransfer
+entrypoint: ParaTransfer.sol
+contract-address: '0xc1d2d28cdfba332c9654b4b400d84e5a301e0208'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

@@ -1,0 +1,5 @@
+contract-name: LCT
+entrypoint: LCT.sol
+contract-address: '0x4c246f6e5fb1302c4f244ca3acabc2c09cfd46ad'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

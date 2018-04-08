@@ -1,0 +1,5 @@
+contract-name: BONES
+entrypoint: BONES.sol
+contract-address: '0x485ccff877b3330d68bc6fe45440ed5cd4307283'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

@@ -1,0 +1,5 @@
+contract-name: SkrumbleToken
+entrypoint: SkrumbleToken.sol
+contract-address: '0x0fd34a4bdbc6633d613be0ca3316c0d2e6521c85'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

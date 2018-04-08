@@ -1,0 +1,5 @@
+contract-name: OPSToken
+entrypoint: OPSToken.sol
+contract-address: '0x53070b6c34bfbb8c0bbd46df2d5a05e3c9179502'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

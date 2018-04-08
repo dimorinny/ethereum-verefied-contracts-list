@@ -1,0 +1,5 @@
+contract-name: BRC
+entrypoint: BRC.sol
+contract-address: '0x3097c003296861e48043a1c4921b021f0feb81d7'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

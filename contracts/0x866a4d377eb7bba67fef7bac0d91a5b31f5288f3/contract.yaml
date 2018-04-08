@@ -1,0 +1,5 @@
+contract-name: TokenCLC
+entrypoint: TokenCLC.sol
+contract-address: '0x866a4d377eb7bba67fef7bac0d91a5b31f5288f3'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

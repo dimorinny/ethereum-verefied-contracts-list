@@ -1,0 +1,5 @@
+contract-name: AQI
+entrypoint: AQI.sol
+contract-address: '0xb6db766c14a8647935bad51edd2b946aae1c5806'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

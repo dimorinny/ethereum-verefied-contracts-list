@@ -1,0 +1,5 @@
+contract-name: EquinoxCoin
+entrypoint: EquinoxCoin.sol
+contract-address: '0xdc99898917f189bbd5f6583ec3b3d61b4ba06410'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910

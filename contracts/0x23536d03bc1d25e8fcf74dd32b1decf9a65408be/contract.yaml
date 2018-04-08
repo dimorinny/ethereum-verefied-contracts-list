@@ -1,0 +1,5 @@
+contract-name: Jii
+entrypoint: Jii.sol
+contract-address: '0x23536d03bc1d25e8fcf74dd32b1decf9a65408be'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

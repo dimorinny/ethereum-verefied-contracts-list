@@ -1,0 +1,5 @@
+contract-name: TestSale
+entrypoint: TestSale.sol
+contract-address: '0xc589acb9da47e14a7131e7a1aa7bf577a7f5d2fd'
+network: mainnet
+compiler: v0.4.22-nightly.2018.3.30+commit.326d656a

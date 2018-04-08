@@ -1,0 +1,6 @@
+contract-name: SketchMarket
+entrypoint: SketchMarket.sol
+contract-address: '0x31c70e9a1bab16f47710e4b302c49998cfb36ef9'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910
+optimization-runs: 200

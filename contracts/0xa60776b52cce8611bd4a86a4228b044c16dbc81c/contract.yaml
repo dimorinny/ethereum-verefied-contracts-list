@@ -1,0 +1,6 @@
+contract-name: RedSoxRays48
+entrypoint: RedSoxRays48.sol
+contract-address: '0xa60776b52cce8611bd4a86a4228b044c16dbc81c'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

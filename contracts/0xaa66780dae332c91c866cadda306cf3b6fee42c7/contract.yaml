@@ -1,0 +1,6 @@
+contract-name: BCP
+entrypoint: BCP.sol
+contract-address: '0xaa66780dae332c91c866cadda306cf3b6fee42c7'
+network: mainnet
+compiler: v0.4.22-nightly.2018.4.5+commit.c6adad93
+optimization-runs: 200

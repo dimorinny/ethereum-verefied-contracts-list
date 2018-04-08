@@ -1,0 +1,6 @@
+contract-name: MainToken
+entrypoint: MainToken.sol
+contract-address: '0x1afee0f097545cf15dc3e9449c2846e78ec68767'
+network: mainnet
+compiler: v0.4.20+commit.3155dd80
+optimization-runs: 200

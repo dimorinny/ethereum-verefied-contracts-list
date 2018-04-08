@@ -1,0 +1,5 @@
+contract-name: CSTToken
+entrypoint: CSTToken.sol
+contract-address: '0x93e13c068ec84986477fb2551222b814a684e0c2'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

@@ -1,0 +1,5 @@
+contract-name: TokenStoreBalances
+entrypoint: TokenStoreBalances.sol
+contract-address: '0x4ee174448fc9657f813dabc7ac4d6e951e602311'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

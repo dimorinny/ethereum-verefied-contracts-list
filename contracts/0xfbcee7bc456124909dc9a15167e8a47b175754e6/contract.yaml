@@ -1,0 +1,5 @@
+contract-name: StrongHold
+entrypoint: StrongHold.sol
+contract-address: '0xfbcee7bc456124909dc9a15167e8a47b175754e6'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

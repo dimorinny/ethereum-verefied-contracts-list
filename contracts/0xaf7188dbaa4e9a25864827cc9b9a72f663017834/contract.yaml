@@ -1,0 +1,5 @@
+contract-name: HammBones
+entrypoint: HammBones.sol
+contract-address: '0xaf7188dbaa4e9a25864827cc9b9a72f663017834'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

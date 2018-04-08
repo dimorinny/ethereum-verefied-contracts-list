@@ -1,0 +1,5 @@
+contract-name: DSJL
+entrypoint: DSJL.sol
+contract-address: '0x505d0c2061f124c0ae03f795c4aeddd7ff9d471e'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

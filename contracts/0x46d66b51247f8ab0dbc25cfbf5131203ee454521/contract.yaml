@@ -1,0 +1,5 @@
+contract-name: Distribute
+entrypoint: Distribute.sol
+contract-address: '0x46d66b51247f8ab0dbc25cfbf5131203ee454521'
+network: mainnet
+compiler: v0.4.19+commit.c4cbbb05

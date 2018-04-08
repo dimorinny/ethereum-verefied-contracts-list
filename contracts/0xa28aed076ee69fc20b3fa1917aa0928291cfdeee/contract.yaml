@@ -1,0 +1,5 @@
+contract-name: GREMToken
+entrypoint: GREMToken.sol
+contract-address: '0xa28aed076ee69fc20b3fa1917aa0928291cfdeee'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

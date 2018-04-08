@@ -1,0 +1,5 @@
+contract-name: NEON
+entrypoint: NEON.sol
+contract-address: '0xffa0c3f81c4312fcf86144d13dbb5d0091f23075'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

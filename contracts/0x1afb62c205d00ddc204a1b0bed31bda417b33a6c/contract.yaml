@@ -1,0 +1,5 @@
+contract-name: GREENECO
+entrypoint: GREENECO.sol
+contract-address: '0x1afb62c205d00ddc204a1b0bed31bda417b33a6c'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

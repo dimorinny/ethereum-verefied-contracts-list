@@ -1,0 +1,5 @@
+contract-name: CrystalSkull
+entrypoint: CrystalSkull.sol
+contract-address: '0x3c8d5cddc37b0934b13d3df74e286d915595b076'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

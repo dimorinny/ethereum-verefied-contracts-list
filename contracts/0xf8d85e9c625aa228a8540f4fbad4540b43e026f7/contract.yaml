@@ -1,0 +1,5 @@
+contract-name: ShoreCoin
+entrypoint: ShoreCoin.sol
+contract-address: '0xf8d85e9c625aa228a8540f4fbad4540b43e026f7'
+network: mainnet
+compiler: v0.4.19+commit.c4cbbb05

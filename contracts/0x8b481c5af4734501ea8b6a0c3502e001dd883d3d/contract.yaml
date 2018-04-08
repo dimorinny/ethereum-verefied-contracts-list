@@ -1,0 +1,6 @@
+contract-name: LuckyPackage
+entrypoint: LuckyPackage.sol
+contract-address: '0x8b481c5af4734501ea8b6a0c3502e001dd883d3d'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

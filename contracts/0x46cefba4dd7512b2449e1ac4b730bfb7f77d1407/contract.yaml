@@ -1,0 +1,6 @@
+contract-name: DecentralizedExchangeHotPotato
+entrypoint: DecentralizedExchangeHotPotato.sol
+contract-address: '0x46cefba4dd7512b2449e1ac4b730bfb7f77d1407'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

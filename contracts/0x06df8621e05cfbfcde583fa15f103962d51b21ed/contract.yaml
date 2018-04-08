@@ -1,0 +1,5 @@
+contract-name: NooToken
+entrypoint: NooToken.sol
+contract-address: '0x06df8621e05cfbfcde583fa15f103962d51b21ed'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

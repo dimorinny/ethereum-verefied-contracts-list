@@ -1,0 +1,6 @@
+contract-name: LakersvsRockets
+entrypoint: LakersvsRockets.sol
+contract-address: '0xbb25ba40961f7c21f5925977eb24f19ab283d96f'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

@@ -1,0 +1,6 @@
+contract-name: QUIZ_GAME
+entrypoint: QUIZ_GAME.sol
+contract-address: '0xb19117892e2b2aaa418e75f61d7d1c05f86b66bd'
+network: mainnet
+compiler: v0.4.19+commit.c4cbbb05
+optimization-runs: 200

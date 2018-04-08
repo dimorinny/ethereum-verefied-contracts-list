@@ -1,0 +1,6 @@
+contract-name: WeClosedInto
+entrypoint: WeClosedInto.sol
+contract-address: '0x98ae79266fe89885b30b94e2677d092d8304aef2'
+network: mainnet
+compiler: v0.4.20+commit.3155dd80
+optimization-runs: 200

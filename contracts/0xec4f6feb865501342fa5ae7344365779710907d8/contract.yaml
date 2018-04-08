@@ -1,0 +1,5 @@
+contract-name: WerderCoin
+entrypoint: WerderCoin.sol
+contract-address: '0xec4f6feb865501342fa5ae7344365779710907d8'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910

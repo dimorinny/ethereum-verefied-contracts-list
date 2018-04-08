@@ -1,0 +1,5 @@
+contract-name: bar
+entrypoint: bar.sol
+contract-address: '0x1892694cdcafc62a66f6b82acd9f0980d6d0c80e'
+network: mainnet
+compiler: v0.4.22-nightly.2018.3.30+commit.326d656a

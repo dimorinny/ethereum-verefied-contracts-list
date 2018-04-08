@@ -1,0 +1,6 @@
+contract-name: UnitedfansTokenCrowdsale
+entrypoint: UnitedfansTokenCrowdsale.sol
+contract-address: '0x2e84e0639ea1f1cf9b6125b3ac7a19d8a405ed70'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

@@ -1,0 +1,6 @@
+contract-name: TokenTKC
+entrypoint: TokenTKC.sol
+contract-address: '0xd2da4b7805ca8003a167186d1c9a8180e0d57b96'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

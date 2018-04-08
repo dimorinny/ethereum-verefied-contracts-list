@@ -1,0 +1,6 @@
+contract-name: POOH
+entrypoint: POOH.sol
+contract-address: '0x4c29d75cc423e8adaa3839892feb66977e295829'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

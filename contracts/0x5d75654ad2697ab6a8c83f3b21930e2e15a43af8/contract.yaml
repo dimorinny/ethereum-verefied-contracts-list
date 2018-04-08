@@ -1,0 +1,5 @@
+contract-name: BitcoinDublicate
+entrypoint: BitcoinDublicate.sol
+contract-address: '0x5d75654ad2697ab6a8c83f3b21930e2e15a43af8'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

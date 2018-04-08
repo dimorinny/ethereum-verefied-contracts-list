@@ -1,0 +1,5 @@
+contract-name: FreshWaterFlow
+entrypoint: FreshWaterFlow.sol
+contract-address: '0x09b6bd9d0b66f6d7608c29802cf2bfe7d7e6e918'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

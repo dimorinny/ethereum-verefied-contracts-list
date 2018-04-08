@@ -1,0 +1,5 @@
+contract-name: RICEBALLZ
+entrypoint: RICEBALLZ.sol
+contract-address: '0x77e79f7c8e256f3fbf009abd4503e5374f93a774'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

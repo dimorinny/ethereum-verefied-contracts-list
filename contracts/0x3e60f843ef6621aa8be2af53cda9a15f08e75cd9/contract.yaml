@@ -1,0 +1,6 @@
+contract-name: MDOSToken
+entrypoint: MDOSToken.sol
+contract-address: '0x3e60f843ef6621aa8be2af53cda9a15f08e75cd9'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

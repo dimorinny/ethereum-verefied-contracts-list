@@ -1,0 +1,6 @@
+contract-name: SafeMathLibExt
+entrypoint: SafeMathLibExt.sol
+contract-address: '0x1ddaedcd022ffe347403a48febae53ca1e3b7afc'
+network: mainnet
+compiler: v0.4.11+commit.68ef5810
+optimization-runs: 200

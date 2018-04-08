@@ -1,0 +1,5 @@
+contract-name: CoinStocker
+entrypoint: CoinStocker.sol
+contract-address: '0xe154561093f7eeaf698bf77f324b4c0483102c9d'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

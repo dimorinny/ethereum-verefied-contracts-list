@@ -1,0 +1,5 @@
+contract-name: TokenEBU
+entrypoint: TokenEBU.sol
+contract-address: '0x1f844685f7bf86efcc0e74d8642c54a257111923'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

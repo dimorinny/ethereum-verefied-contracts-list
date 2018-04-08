@@ -1,0 +1,5 @@
+contract-name: monechainToken
+entrypoint: monechainToken.sol
+contract-address: '0x13d154c50a4b5dcc0723cf29db9b7925879bda5c'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

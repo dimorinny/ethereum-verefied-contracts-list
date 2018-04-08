@@ -1,0 +1,6 @@
+contract-name: QosinusCoin
+entrypoint: QosinusCoin.sol
+contract-address: '0xa8a635b3eae87d2d9955c3dc3b281651f1a566aa'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910
+optimization-runs: 200

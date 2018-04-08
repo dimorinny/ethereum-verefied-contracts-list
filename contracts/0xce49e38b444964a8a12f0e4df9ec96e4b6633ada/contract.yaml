@@ -1,0 +1,5 @@
+contract-name: SimpleCoinToken
+entrypoint: SimpleCoinToken.sol
+contract-address: '0xce49e38b444964a8a12f0e4df9ec96e4b6633ada'
+network: mainnet
+compiler: v0.4.16+commit.d7661dd9

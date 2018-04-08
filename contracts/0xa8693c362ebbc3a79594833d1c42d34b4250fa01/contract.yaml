@@ -1,0 +1,5 @@
+contract-name: ACTION
+entrypoint: ACTION.sol
+contract-address: '0xa8693c362ebbc3a79594833d1c42d34b4250fa01'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

@@ -1,0 +1,6 @@
+contract-name: BlokTokenSale
+entrypoint: BlokTokenSale.sol
+contract-address: '0x4863e8c8bd928bd1cf85eea784736e35c2f48a6a'
+network: mainnet
+compiler: v0.4.13+commit.fb4cb1a
+optimization-runs: 200

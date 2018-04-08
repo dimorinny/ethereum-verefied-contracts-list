@@ -1,0 +1,6 @@
+contract-name: ZYL
+entrypoint: ZYL.sol
+contract-address: '0xd7de419b6331c160eaa33ae32b635f6aa54e0e61'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

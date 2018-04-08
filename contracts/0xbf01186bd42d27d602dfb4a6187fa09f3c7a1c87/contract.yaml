@@ -1,0 +1,6 @@
+contract-name: O9COIN
+entrypoint: O9COIN.sol
+contract-address: '0xbf01186bd42d27d602dfb4a6187fa09f3c7a1c87'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910
+optimization-runs: 200

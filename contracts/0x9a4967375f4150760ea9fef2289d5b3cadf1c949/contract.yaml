@@ -1,0 +1,5 @@
+contract-name: GreenWorldFarm
+entrypoint: GreenWorldFarm.sol
+contract-address: '0x9a4967375f4150760ea9fef2289d5b3cadf1c949'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

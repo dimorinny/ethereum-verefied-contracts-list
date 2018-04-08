@@ -1,0 +1,5 @@
+contract-name: AC
+entrypoint: AC.sol
+contract-address: '0x16d0095d9e12b9e7ced8ce40e76c90a08222d10e'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910

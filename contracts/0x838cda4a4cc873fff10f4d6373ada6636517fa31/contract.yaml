@@ -1,0 +1,5 @@
+contract-name: EtheremonRankData
+entrypoint: EtheremonRankData.sol
+contract-address: '0x838cda4a4cc873fff10f4d6373ada6636517fa31'
+network: mainnet
+compiler: v0.4.19+commit.c4cbbb05

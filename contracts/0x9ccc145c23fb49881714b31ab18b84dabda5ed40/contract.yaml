@@ -1,0 +1,5 @@
+contract-name: PVCToken
+entrypoint: PVCToken.sol
+contract-address: '0x9ccc145c23fb49881714b31ab18b84dabda5ed40'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

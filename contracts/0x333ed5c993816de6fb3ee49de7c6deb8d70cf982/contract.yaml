@@ -1,0 +1,6 @@
+contract-name: RockScissorPaper
+entrypoint: RockScissorPaper.sol
+contract-address: '0x333ed5c993816de6fb3ee49de7c6deb8d70cf982'
+network: mainnet
+compiler: v0.4.19+commit.c4cbbb05
+optimization-runs: 500

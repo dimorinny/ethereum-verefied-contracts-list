@@ -1,0 +1,6 @@
+contract-name: PoWMLottery
+entrypoint: PoWMLottery.sol
+contract-address: '0xa00f2741662d1d15ef0dd4445d9d2c3d8d9e0fb8'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

@@ -1,0 +1,5 @@
+contract-name: TaTaTu
+entrypoint: TaTaTu.sol
+contract-address: '0x9cda8a60dd5afa156c95bd974428d91a0812e054'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

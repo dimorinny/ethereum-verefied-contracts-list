@@ -1,0 +1,6 @@
+contract-name: TheIlluminati
+entrypoint: TheIlluminati.sol
+contract-address: '0x74c5ab4757fcdbf8732230ca154498ea0c538239'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

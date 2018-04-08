@@ -1,0 +1,6 @@
+contract-name: CryptoThreeKingdoms
+entrypoint: CryptoThreeKingdoms.sol
+contract-address: '0x9f87c89d4b96628f3f5bc6ab981bab71997d99bb'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

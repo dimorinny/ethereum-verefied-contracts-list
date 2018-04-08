@@ -1,0 +1,6 @@
+contract-name: MyToken
+entrypoint: MyToken.sol
+contract-address: '0x6a8ed361a042a95538f3ca8ede2885a51e806c81'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

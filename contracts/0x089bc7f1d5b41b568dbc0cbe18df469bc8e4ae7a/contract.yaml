@@ -1,0 +1,5 @@
+contract-name: Hourglass
+entrypoint: Hourglass.sol
+contract-address: '0x089bc7f1d5b41b568dbc0cbe18df469bc8e4ae7a'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

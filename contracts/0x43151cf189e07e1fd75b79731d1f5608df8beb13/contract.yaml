@@ -1,0 +1,5 @@
+contract-name: SafePromo
+entrypoint: SafePromo.sol
+contract-address: '0x43151cf189e07e1fd75b79731d1f5608df8beb13'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

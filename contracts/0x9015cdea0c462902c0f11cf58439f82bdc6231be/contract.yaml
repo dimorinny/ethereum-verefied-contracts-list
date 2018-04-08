@@ -1,0 +1,5 @@
+contract-name: TokenERC20
+entrypoint: TokenERC20.sol
+contract-address: '0x9015cdea0c462902c0f11cf58439f82bdc6231be'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

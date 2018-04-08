@@ -24,8 +24,20 @@ async function loadAddressesForPage (page) {
 }
 
 async function loadContractForAddress (address) {
-  const html = await load(`https://etherscan.io/address/${address}`)
-  return Contract.fromHtml(address, html)
+  return await retry(async () => {
+    const html = await load(`https://etherscan.io/address/${address}`)
+    const contract = Contract.fromHtml(address, html)
+
+    if (!contract.isValid()) {
+      throw new Error(`Loaded contract for address: ${address} is not valid`)
+    }
+
+    return contract
+  }, {
+    onRetry: (_, number) => {
+      console.log(`Retrying request for ${address} (number : ${number})`)
+    }
+  })
 }
 
 async function loadAddresses (from, to) {

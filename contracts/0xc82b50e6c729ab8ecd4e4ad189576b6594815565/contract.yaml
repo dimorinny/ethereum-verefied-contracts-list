@@ -1,0 +1,5 @@
+contract-name: DScoin
+entrypoint: DScoin.sol
+contract-address: '0xc82b50e6c729ab8ecd4e4ad189576b6594815565'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

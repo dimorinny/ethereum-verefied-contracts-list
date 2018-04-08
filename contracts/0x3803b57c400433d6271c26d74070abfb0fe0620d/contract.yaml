@@ -1,0 +1,5 @@
+contract-name: LanaCharleen8
+entrypoint: LanaCharleen8.sol
+contract-address: '0x3803b57c400433d6271c26d74070abfb0fe0620d'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

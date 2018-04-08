@@ -1,0 +1,5 @@
+contract-name: POWH1337
+entrypoint: POWH1337.sol
+contract-address: '0xa572e356fe636db853f0d55493f2f866f0558cde'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

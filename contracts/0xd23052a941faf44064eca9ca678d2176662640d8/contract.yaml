@@ -1,0 +1,5 @@
+contract-name: VIRCOIN
+entrypoint: VIRCOIN.sol
+contract-address: '0xd23052a941faf44064eca9ca678d2176662640d8'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

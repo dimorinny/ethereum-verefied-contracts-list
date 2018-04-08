@@ -1,0 +1,6 @@
+contract-name: Airdropper
+entrypoint: Airdropper.sol
+contract-address: '0xfa1a95e1f2922c0652f159a1922379d712aa7953'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

@@ -1,0 +1,6 @@
+contract-name: CustomToken
+entrypoint: CustomToken.sol
+contract-address: '0xad14e61e0c450f525429861b1e482eedf914a541'
+network: mainnet
+compiler: v0.4.19+commit.c4cbbb05
+optimization-runs: 200

@@ -1,0 +1,5 @@
+contract-name: RYNote
+entrypoint: RYNote.sol
+contract-address: '0x10485844fe913b7914b0bd8b732c5d57bb615581'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

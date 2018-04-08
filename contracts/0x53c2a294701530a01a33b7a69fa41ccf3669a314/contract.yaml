@@ -1,0 +1,5 @@
+contract-name: MyAdvancedToken
+entrypoint: MyAdvancedToken.sol
+contract-address: '0x53c2a294701530a01a33b7a69fa41ccf3669a314'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

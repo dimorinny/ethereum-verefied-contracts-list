@@ -1,0 +1,6 @@
+contract-name: GemsToken
+entrypoint: GemsToken.sol
+contract-address: '0x04e9734be606eae570432a7fad573be124245b33'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910
+optimization-runs: 200

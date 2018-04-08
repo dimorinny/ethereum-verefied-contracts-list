@@ -1,0 +1,5 @@
+contract-name: PVCCrowdsale
+entrypoint: PVCCrowdsale.sol
+contract-address: '0x630692af992c84d59a77990587b15d8b330e084b'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

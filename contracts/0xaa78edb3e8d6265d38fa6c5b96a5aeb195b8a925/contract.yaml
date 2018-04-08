@@ -1,0 +1,5 @@
+contract-name: VantageCoin
+entrypoint: VantageCoin.sol
+contract-address: '0xaa78edb3e8d6265d38fa6c5b96a5aeb195b8a925'
+network: mainnet
+compiler: v0.4.19+commit.c4cbbb05

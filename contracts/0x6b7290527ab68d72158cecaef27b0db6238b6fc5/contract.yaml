@@ -1,0 +1,5 @@
+contract-name: ConunToken
+entrypoint: ConunToken.sol
+contract-address: '0x6b7290527ab68d72158cecaef27b0db6238b6fc5'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

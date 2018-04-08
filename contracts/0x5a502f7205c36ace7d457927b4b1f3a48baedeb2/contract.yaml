@@ -1,0 +1,6 @@
+contract-name: CrypTollBoothToken
+entrypoint: CrypTollBoothToken.sol
+contract-address: '0x5a502f7205c36ace7d457927b4b1f3a48baedeb2'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910
+optimization-runs: 200

@@ -1,0 +1,5 @@
+contract-name: BinaryOptionV2
+entrypoint: BinaryOptionV2.sol
+contract-address: '0x15d92e219cfe22b7515dd6d1cf5a6a65a4e2acf1'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

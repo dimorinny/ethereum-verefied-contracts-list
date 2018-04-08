@@ -1,0 +1,5 @@
+contract-name: FMT_Crowdsale
+entrypoint: FMT_Crowdsale.sol
+contract-address: '0x913fa716822660489b2c031d1844bd1425e7ef32'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

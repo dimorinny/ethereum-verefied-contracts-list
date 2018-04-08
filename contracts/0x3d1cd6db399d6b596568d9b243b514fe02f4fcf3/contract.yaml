@@ -1,0 +1,6 @@
+contract-name: O9CoinCrowdsale
+entrypoint: O9CoinCrowdsale.sol
+contract-address: '0x3d1cd6db399d6b596568d9b243b514fe02f4fcf3'
+network: mainnet
+compiler: v0.4.18+commit.9cf6e910
+optimization-runs: 200

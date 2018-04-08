@@ -1,0 +1,5 @@
+contract-name: ProofOfVerifiedContract
+entrypoint: ProofOfVerifiedContract.sol
+contract-address: '0x20a35ada16321d18ba2e72bd5fe81bc23515dbd9'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

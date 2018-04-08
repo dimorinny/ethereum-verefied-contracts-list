@@ -1,0 +1,6 @@
+contract-name: OrguraExchange
+entrypoint: OrguraExchange.sol
+contract-address: '0x9abd17d10889dc470f03698fc6ea1d2df52a6e1c'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

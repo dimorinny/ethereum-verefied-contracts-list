@@ -1,0 +1,5 @@
+contract-name: SLChainToken
+entrypoint: SLChainToken.sol
+contract-address: '0xeb0314359a3ecccfcb2df3c4c0c9e509b4d12a73'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

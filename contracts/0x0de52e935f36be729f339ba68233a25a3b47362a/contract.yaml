@@ -1,0 +1,6 @@
+contract-name: TemplateCrowdsale
+entrypoint: TemplateCrowdsale.sol
+contract-address: '0x0de52e935f36be729f339ba68233a25a3b47362a'
+network: mainnet
+compiler: v0.4.20+commit.3155dd80
+optimization-runs: 200

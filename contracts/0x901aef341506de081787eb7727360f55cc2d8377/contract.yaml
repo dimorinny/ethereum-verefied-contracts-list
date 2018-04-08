@@ -1,0 +1,5 @@
+contract-name: NooCrowdsale
+entrypoint: NooCrowdsale.sol
+contract-address: '0x901aef341506de081787eb7727360f55cc2d8377'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

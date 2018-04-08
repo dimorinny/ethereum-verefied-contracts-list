@@ -1,0 +1,5 @@
+contract-name: MeteorToken
+entrypoint: MeteorToken.sol
+contract-address: '0x55e15a908076743feefde6ef4bb0c4138e87c9f1'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c

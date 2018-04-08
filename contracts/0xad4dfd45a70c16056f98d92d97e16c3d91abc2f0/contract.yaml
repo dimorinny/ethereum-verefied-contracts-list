@@ -1,0 +1,6 @@
+contract-name: UnitedfansToken
+entrypoint: UnitedfansToken.sol
+contract-address: '0xad4dfd45a70c16056f98d92d97e16c3d91abc2f0'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200

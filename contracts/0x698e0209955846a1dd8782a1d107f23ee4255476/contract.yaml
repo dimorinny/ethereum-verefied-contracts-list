@@ -1,0 +1,6 @@
+contract-name: OneToken
+entrypoint: OneToken.sol
+contract-address: '0x698e0209955846a1dd8782a1d107f23ee4255476'
+network: mainnet
+compiler: v0.4.21+commit.dfe3193c
+optimization-runs: 200
