@@ -8,7 +8,8 @@ class SwarmMetadataStripper {
   process (byteCode) {
     return byteCode.replace(
       new RegExp(
-        `${SwarmMetadataStripper.SWARM_PREFIX}.{${SwarmMetadataStripper.SWARM_LENGTH}}`
+        `${SwarmMetadataStripper.SWARM_PREFIX}.{${SwarmMetadataStripper.SWARM_LENGTH}}`,
+        'g'
       ),
       ''
     )
